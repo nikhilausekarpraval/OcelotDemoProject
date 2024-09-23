@@ -95,6 +95,102 @@
           "Port": 8080
         }
       ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/employee/get",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/employee/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/employee/delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/employee/update",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/task/get",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/taskItem",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/task/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/taskItem",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/task/delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/taskItem",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/core-gateway/task/update",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/taskItem",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9091
+        }
+      ]
     }
   ],
   "GlobalConfiguration": { "BaseUrl": "http://localhost:5003" }
