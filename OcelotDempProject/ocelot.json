@@ -99,7 +99,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/employee/get",
       "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamPathTemplate": "/employee",
+      "DownstreamPathTemplate": "/employee/get",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -111,7 +111,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/employee/register",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/employee",
+      "DownstreamPathTemplate": "/employee/register",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -123,7 +123,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/employee/delete",
       "UpstreamHttpMethod": [ "Delete" ],
-      "DownstreamPathTemplate": "/employee",
+      "DownstreamPathTemplate": "/employee/delete",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -135,7 +135,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/employee/update",
       "UpstreamHttpMethod": [ "Put" ],
-      "DownstreamPathTemplate": "/employee",
+      "DownstreamPathTemplate": "/employee/update",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -147,7 +147,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/task/get",
       "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamPathTemplate": "/task",
+      "DownstreamPathTemplate": "/task/get",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -159,7 +159,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/task/register",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/task",
+      "DownstreamPathTemplate": "/task/register",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -171,7 +171,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/task/delete",
       "UpstreamHttpMethod": [ "Delete" ],
-      "DownstreamPathTemplate": "/task",
+      "DownstreamPathTemplate": "/task/delete",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -183,7 +183,7 @@
     {
       "UpstreamPathTemplate": "/core-gateway/task/update",
       "UpstreamHttpMethod": [ "Put" ],
-      "DownstreamPathTemplate": "/task",
+      "DownstreamPathTemplate": "/task/update",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {

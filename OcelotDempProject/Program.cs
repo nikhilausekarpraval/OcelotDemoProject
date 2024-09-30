@@ -1,33 +1,22 @@
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware;
 
-var builder = WebApplication.CreateBuilder(args);
+using OcelotDempProject;
 
-
-builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
-
-
-builder.Services.AddOcelot(builder.Configuration);
-
-builder.Services.AddCors(options =>
+public class Program
 {
-    options.AddPolicy("AllowAllOrigins", builder =>
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader());
-});
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
 
-var app = builder.Build();
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((context, config) =>
+            {
+                config.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true).AddEnvironmentVariables();
 
-app.UseHttpsRedirection();
-
-app.UseCors("AllowAllOrigins");
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-await app.UseOcelot();
-
-
-app.Run();
+            })
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+}
